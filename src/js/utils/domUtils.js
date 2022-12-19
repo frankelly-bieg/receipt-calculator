@@ -148,6 +148,7 @@ export const addNewProduct = addRow => {
   removeButton.addEventListener('click', function () {
     document.getElementById(tr.id).remove();
     updateReceipt();
+    updateSummary();
   });
 
   addTd(tr, null, 'action-item', removeButton);
