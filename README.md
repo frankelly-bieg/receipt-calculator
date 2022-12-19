@@ -26,11 +26,17 @@ P.S: Since the code within this project is basic, older versions of node may wor
 
 ## Usage
 
-```bash
-# run the app
-npm run start
+### How to run the app
 
-# run all the test
+```bash
+npm run start
+```
+
+then, navigate to <http://localhost:3030> with your browser
+
+### How to run all the test
+
+```bash
 npm run test
 ```
 
