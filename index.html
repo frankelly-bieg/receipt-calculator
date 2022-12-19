@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Receipt Calculator</title>
+    <!-- import styles.css -->
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <div class="title-container">
+      <h1>Welcome to Receipt Calculator</h1>
+      <div class="receipt-options">
+        <button onClick="window.location.reload();">Reset</button>
+        <button onClick="window.print();">Print</button>
+      </div>
+    </div>
+    <div class="container">
+      <div>
+        <table class="table-container">
+          <tr>
+            <th>Amount</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Unit price</th>
+            <th>Is imported</th>
+            <th>Action</th>
+          </tr>
+
+          <tr class="add-row">
+            <td>
+              <input type="number" id="quantity" name="quantity" min="1" value="1" step="1" />
+            </td>
+            <td>
+              <select id="type" name="type">
+                <option value="food">Food</option>
+                <option value="medical">Medical</option>
+                <option value="book">Book</option>
+                <option value="other">Other</option>
+            </td>
+            <td><input type="text" id="description" name="description" /></td>
+            <td><input type="number" id="unitPrice" name="unitPrice" min="0" value="1" /></td>
+            <td>No<input type="range" id="isImported" name="isImported" min="0" max="1" value="0"/>Yes</td>
+            <td>
+              <button type="button" id="add" class="add-button">Add</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div></div>
+      <div class="output-container">
+        <div>Sub total: <span id="sub-total">0</span></div>
+        <div>Sales Taxes: <span id="sales-taxes">0</span></div>
+        <div>Total: <span id="total">0</span></div>
+      </div>
+
+      <div>
+        <h2>Receipt details</h2>
+        <hr />
+      </div>
+      <div id="receipt">
+      </div>
+    </div>
+
+    <script type="module" src="./src/js/index.js"></script>
+  </body>
+</html>

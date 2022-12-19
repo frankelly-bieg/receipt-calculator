@@ -1,0 +1,13 @@
+{
+  "name": "receipt-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./main.js",
+    "test": "node ./src/tests/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
